@@ -53,6 +53,6 @@ Group Member
  Rumbidzai Tangwadzana - Employee Management                                           
  Johannes Nekongo      - Budget Management                                            
  Oletu Hauwanga        - Supplier Management                                          
- Elisha Adjibola       - Asset Management                                              
+ Elisha Ajibola       - Asset Management                                              
  Pinias Shilongo       - Asset Management, Testing, Documentation and Git Coordination 
  Uahorora Kahitu       - Reports                                                       
