@@ -2,7 +2,7 @@
 #include "employee.h"
 #include "budget.h"
 #include "supplier.h"
-#include "asset.h"
+#include "assets.h"
 #include "report.h"
 
 
@@ -48,16 +48,13 @@ void displayMenu(void)
     printf("========================================\n");
 }
 
-
-
-
 int getMenuChoice(void)
 {
     int choice;
 
     printf("Enter your choice: ");
 
-    while (scanf("%d", &choice) != 1)
+    while (scanf("%d", &choice) != 1 || choice < 1 || choice > 6)
     {
         printf("Invalid input. Please enter a number: ");
 
@@ -66,19 +63,8 @@ int getMenuChoice(void)
             /* Clear invalid input */
         }
     }
-
-    if (choice < 1 || choice > 6)
-    {
-        printf("Invalid choice. Please select 1-6.\n");
-    }
-
-    return choice;
+return choice;
 }
-
-
-
-
-
 
 void handleMenuChoice(int choice)
 {
