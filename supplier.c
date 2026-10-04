@@ -11,7 +11,7 @@ char supplierTelephone[MAX_SUPPLIERS][20];
 char supplierTown[MAX_SUPPLIERS][30];
 
 int supplierCount = 0;
-int i;
+static int i;
 
 void supplierMenu();
 void addSupplier();
@@ -20,6 +20,7 @@ void searchSupplier();
 void compareSuppliers();
 
 void supplierMenu() {
+ 
 
     int choice;
 
@@ -192,9 +193,11 @@ void compareSuppliers() {
     }
 }
 
-int main() {
+#if 0
+int main(void) {
 
     supplierMenu();
 
     return 0;
 }
+    #endif
